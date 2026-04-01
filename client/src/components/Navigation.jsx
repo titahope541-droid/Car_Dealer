@@ -4,11 +4,11 @@ export default function Navigation() {
   const navigate = useNavigate()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-lg z-50">
-      
+    <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-500 px-6 py-4 flex justify-between items-center shadow-lg z-50">
+
       {/* Logo */}
-      <h1 
-        onClick={() => navigate("/")} 
+      <h1
+        onClick={() => navigate("/")}
         className="text-2xl font-bold cursor-pointer hover:text-blue-400 transition"
       >
         🚗 AutoStore
@@ -19,17 +19,21 @@ export default function Navigation() {
         <Link to="/" className="hover:text-blue-300 transition font-semibold">
           Browse Cars
         </Link>
-        <Link to="/inventory" className="hover:text-blue-300 transition font-semibold">
+        <Link to="/inventory" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
           Inventory
         </Link>
-        <Link to="/orders" className="hover:text-blue-300 transition font-semibold">
+        <Link to="/orders" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
           My Orders
         </Link>
-        <Link to="/favorites" className="hover:text-blue-300 transition font-semibold">
-          Saved
-        </Link>
-        <Link to="/support" className="hover:text-blue-300 transition font-semibold">
+
+        <Link to="/support" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
           Support
+        </Link>
+      </div>
+
+      <div className="flex gap-6 items-center">
+        <Link to="/favorites" className="hover:text-blue-300 transition hover:scale-75 font-semibold flex flex-col">
+          <i className="fas fa-heart"></i> Saved
         </Link>
       </div>
 
