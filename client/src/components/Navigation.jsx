@@ -19,7 +19,7 @@ export default function Navigation() {
         <Link to="/" className="hover:text-blue-300 transition font-semibold">
           Browse Cars
         </Link>
-        <Link to="/inventory" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
+        <Link to="/inventory" className="hover:text-blue-300 transition hover:scale-105 font-semibold">
           Inventory
         </Link>
         <Link to="/support" className="hover:text-blue-300 transition hover:scale-105 font-semibold">
@@ -28,11 +28,11 @@ export default function Navigation() {
       </div>
 
       <div className="flex gap-6 items-center">
-        <Link to="/favorites" className="hover:text-blue-300 transition hover:scale-105 justify-center font-semibold flex flex-col">
-          <i className="fas fa-heart"></i> Saved
+        <Link to="/favorites" className="hover:text-blue-300 transition hover:scale-105 items-center font-semibold flex flex-col">
+          <i className="fas fa-heart text-grey-100"></i> Saved
         </Link>
-        <Link to="/orders" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
-          <i className="fas fa-shopping-cart"></i> My Orders
+        <Link to="/orders" className="hover:text-blue-300 transition hover:scale-105 font-semibold flex flex-col items-center">
+          <i className="fas fa-shopping-cart text-grey-100"></i> My Orders
         </Link>
       </div>
 
