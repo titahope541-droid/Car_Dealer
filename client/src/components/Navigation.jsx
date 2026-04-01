@@ -4,7 +4,7 @@ export default function Navigation() {
   const navigate = useNavigate()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-500 px-6 py-4 flex justify-between items-center shadow-lg z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-300 px-6 py-4 flex justify-between items-center shadow-lg z-50">
 
       {/* Logo */}
       <h1
@@ -22,18 +22,17 @@ export default function Navigation() {
         <Link to="/inventory" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
           Inventory
         </Link>
-        <Link to="/orders" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
-          My Orders
-        </Link>
-
-        <Link to="/support" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
+        <Link to="/support" className="hover:text-blue-300 transition hover:scale-105 font-semibold">
           Support
         </Link>
       </div>
 
       <div className="flex gap-6 items-center">
-        <Link to="/favorites" className="hover:text-blue-300 transition hover:scale-75 font-semibold flex flex-col">
+        <Link to="/favorites" className="hover:text-blue-300 transition hover:scale-105 justify-center font-semibold flex flex-col">
           <i className="fas fa-heart"></i> Saved
+        </Link>
+        <Link to="/orders" className="hover:text-blue-300 transition hover:scale-75 font-semibold">
+          <i className="fas fa-shopping-cart"></i> My Orders
         </Link>
       </div>
 
