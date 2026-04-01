@@ -8,8 +8,6 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-300 px-6 py-4 flex justify-between items-center ">
 
-      <div className="flex justify-between items-center">
-
         {/* Logo */}
         <h1
           onClick={() => navigate("/")}
@@ -47,7 +45,7 @@ export default function Navbar() {
         >
           ☰
         </button>
-      </div>
+      
 
       {/* Mobile Menu */}
       {
