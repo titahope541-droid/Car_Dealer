@@ -6,7 +6,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-300 px-6 py-4 ">
+    <nav className="absolute top-0 left-0 right-0 w-full bg-transparent text-grey-300 px-6 py-4 z-50">
 
       <div className="flex justify-between items-center">
 
@@ -67,7 +67,7 @@ export default function Navbar() {
               <i className="fas fa-heart text-grey-100 mr-2"></i> Saved
             </Link>
             <Link to="/orders" onClick={() => setMenuOpen(false)}>
-              My Orders
+              <i className="fas fa-shopping-cart text-grey-100 mr-2"></i> My Orders
             </Link>
           </div>
         )
