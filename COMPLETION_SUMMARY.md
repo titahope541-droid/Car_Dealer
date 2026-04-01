@@ -164,7 +164,7 @@ car-marketplace/
 | **Frontend** | http://localhost:5174 |
 | **Backend** | http://localhost:5000 |
 | **API Docs** | See SETUP_GUIDE.md |
-| **Health Check** | http://localhost:5000/api/health |
+| **Health Check** | https://car-dealer-mc48.onrender.com/api/health |
 
 ---
 

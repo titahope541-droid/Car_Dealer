@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'https://car-dealer-mc48.onrender.com/api'
 
 export default function SellCar() {
   const navigate = useNavigate()

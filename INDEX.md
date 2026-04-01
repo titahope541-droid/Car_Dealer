@@ -110,8 +110,8 @@
 |----------|-----|
 | Frontend App | http://localhost:5174 |
 | Backend API | http://localhost:5000 |
-| API Health | http://localhost:5000/api/health |
-| Get Cars | http://localhost:5000/api/cars |
+| API Health | https://car-dealer-mc48.onrender.com/api/health |
+| Get Cars | https://car-dealer-mc48.onrender.com/api/cars |
 
 ---
 
@@ -200,7 +200,7 @@ cd client
 npm run dev
 
 # Check if running
-Backend: http://localhost:5000/api/health
+Backend: https://car-dealer-mc48.onrender.com/api/health
 Frontend: http://localhost:5174
 ```
 

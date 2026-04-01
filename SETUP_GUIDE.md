@@ -230,7 +230,7 @@ taskkill /PID <PID> /F
 ### Cars Not Loading
 1. Verify backend is running on port 5000
 2. Check browser console for network errors
-3. Verify API endpoint: http://localhost:5000/api/cars
+3. Verify API endpoint: https://car-dealer-mc48.onrender.com/api/cars
 
 ---
 

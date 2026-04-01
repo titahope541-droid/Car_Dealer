@@ -443,7 +443,7 @@ taskkill /PID <PID> /F
 **Cars Not Loading?**
 - Check backend is running
 - Check browser console for errors
-- Verify API URL: http://localhost:5000/api/cars
+- Verify API URL: https://car-dealer-mc48.onrender.com/api/cars
 
 **Payment Not Working?**
 - Set STRIPE_SECRET_KEY in .env

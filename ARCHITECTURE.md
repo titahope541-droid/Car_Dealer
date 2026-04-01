@@ -447,7 +447,7 @@ FRONTEND_URL=http://localhost:5174
 PORT=5000
 
 Frontend:
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://car-dealer-mc48.onrender.com/api
 (Hardcoded in components)
 ```
 

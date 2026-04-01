@@ -298,8 +298,8 @@ Just update:
 |--------|-----|
 | Frontend | http://localhost:5174 |
 | Backend | http://localhost:5000 |
-| API | http://localhost:5000/api |
-| Health Check | http://localhost:5000/api/health |
+| API | https://car-dealer-mc48.onrender.com/api |
+| Health Check | https://car-dealer-mc48.onrender.com/api/health |
 
 ---
 
