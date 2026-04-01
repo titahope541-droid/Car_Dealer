@@ -6,7 +6,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-300 px-6 py-4 flex justify-between items-center ">
+    <nav className="fixed top-0 left-0 right-0 bg-transparent text-grey-300 px-6 py-4 ">
+
+      <div className="flex justify-between items-center">
 
         {/* Logo */}
         <h1
@@ -45,7 +47,8 @@ export default function Navbar() {
         >
           ☰
         </button>
-      
+      </div>
+
 
       {/* Mobile Menu */}
       {
