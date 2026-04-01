@@ -53,18 +53,18 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {
         menuOpen && (
-          <div className="md:hidden mt-4 flex flex-col gap-4 bg-gray-800 p-4 rounded-lg">
+          <div className="md:hidden mt-4 flex flex-col gap-4 bg-white p-4 rounded-lg shadow-lg">
             <Link to="/" onClick={() => setMenuOpen(false)}>
-              Browse Cars
+              <i className="fas fa-car text-grey-100 mr-2"></i> Browse Cars
             </Link>
             <Link to="/inventory" onClick={() => setMenuOpen(false)}>
-              Inventory
+              <i className="fas fa-list text-grey-100 mr-2"></i> Inventory
             </Link>
             <Link to="/support" onClick={() => setMenuOpen(false)}>
-              Support
+              <i className="fas fa-headset text-grey-100 mr-2"></i> Support
             </Link>
             <Link to="/favorites" onClick={() => setMenuOpen(false)}>
-              Saved
+              <i className="fas fa-heart text-grey-100 mr-2"></i> Saved
             </Link>
             <Link to="/orders" onClick={() => setMenuOpen(false)}>
               My Orders
