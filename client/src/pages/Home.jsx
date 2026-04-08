@@ -37,7 +37,7 @@ export default function Home() {
             🚗 Find Your Perfect Car Today
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            Buy, sell, and trade quality vehicles with confidence
+            Browse quality vehicles & buy with confidence
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button
@@ -47,10 +47,10 @@ export default function Home() {
               🔍 Browse All Cars
             </button>
             <button
-              onClick={() => navigate('/sell')}
+              onClick={() => navigate('/support')}
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition"
             >
-              📝 Sell Your Car
+              💬 Need Help?
             </button>
           </div>
         </div>
@@ -113,9 +113,9 @@ export default function Home() {
 
             {/* Feature 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Fast Delivery</h3>
-              <p className="text-gray-600">Get your car delivered quickly. Nationwide shipping available.</p>
+              <div className="text-4xl mb-4">🏎️</div>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">Wide Selection</h3>
+              <p className="text-gray-600">Browse hundreds of quality cars handpicked & inspected for you.</p>
             </div>
 
             {/* Feature 4 */}
@@ -234,7 +234,7 @@ export default function Home() {
       <section className="bg-gray-900 text-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">Explore More</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Browse */}
             <Link
               to="/inventory"
@@ -255,16 +255,6 @@ export default function Home() {
               <p className="text-purple-100">Your favorite vehicles in one place</p>
             </Link>
 
-            {/* Orders */}
-            <Link
-              to="/orders"
-              className="bg-green-600 hover:bg-green-700 p-8 rounded-lg text-center transition transform hover:scale-105"
-            >
-              <div className="text-5xl mb-4">📦</div>
-              <h3 className="text-xl font-bold mb-2">My Orders</h3>
-              <p className="text-green-100">Track your purchases & deliveries</p>
-            </Link>
-
             {/* Support */}
             <Link
               to="/support"
@@ -283,7 +273,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Drive Home Your Dream Car?</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Browse our inventory or list your car today. No hidden fees, transparent pricing.
+            Browse our inventory now. Transparent pricing, flexible payment options, secure checkout.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button
@@ -309,10 +299,10 @@ export default function Home() {
             {/* Brand */}
             <div>
               <h4 className="text-white font-bold text-lg mb-4">🚗 AutoStore</h4>
-              <p className="text-sm">Your trusted platform for buying and selling cars online.</p>
+              <p className="text-sm">Your trusted platform for buying quality cars online.</p>
             </div>
 
-            {/* Links */}
+            {/* Browse */}
             <div>
               <h4 className="text-white font-bold mb-4">Browse</h4>
               <ul className="text-sm space-y-2">
@@ -322,12 +312,12 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Sell */}
+            {/* Account */}
             <div>
-              <h4 className="text-white font-bold mb-4">Sell</h4>
+              <h4 className="text-white font-bold mb-4">Account</h4>
               <ul className="text-sm space-y-2">
-                <li><Link to="/sell" className="hover:text-white">List Car</Link></li>
-                <li><Link to="/orders" className="hover:text-white">My Listings</Link></li>
+                <li><Link to="/orders" className="hover:text-white">My Orders</Link></li>
+                <li><Link to="/favorites" className="hover:text-white">Favorites</Link></li>
               </ul>
             </div>
 
@@ -336,7 +326,6 @@ export default function Home() {
               <h4 className="text-white font-bold mb-4">Help & Info</h4>
               <ul className="text-sm space-y-2">
                 <li><Link to="/support" className="hover:text-white">Support</Link></li>
-                <li><Link to="/admin" className="hover:text-white">Admin</Link></li>
               </ul>
             </div>
           </div>
@@ -345,7 +334,7 @@ export default function Home() {
 
           {/* Copyright */}
           <div className="text-center text-sm">
-            <p>&copy; 2026 AutoStore. All rights reserved. | Built with React & Stripe</p>
+            <p>&copy; 2026 AutoStore. All rights reserved. | Buy with confidence.</p>
           </div>
         </div>
       </footer>
