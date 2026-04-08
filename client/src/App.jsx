@@ -9,10 +9,11 @@ import Inventory from './pages/Inventory'
 import Orders from './pages/Orders'
 import Favorites from './pages/Favorites'
 import Support from './pages/Support'
+import Admin from './pages/Admin'
 
 function AppContent() {
   const location = useLocation()
-  const hiddenNavPages = ['/sell']
+  const hiddenNavPages = ['/sell', '/admin']
   const showNav = !hiddenNavPages.includes(location.pathname)
 
   return (
@@ -28,6 +29,7 @@ function AppContent() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </>

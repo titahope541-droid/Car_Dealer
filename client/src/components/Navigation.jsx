@@ -38,6 +38,9 @@ export default function Navbar() {
           <Link to="/orders" className="hover:text-blue-300 transition hover:scale-105 font-semibold flex flex-col items-center">
             <i className="fas fa-shopping-cart text-grey-100"></i> My Orders
           </Link>
+          <Link to="/admin" className="hover:text-yellow-300 transition hover:scale-105 font-semibold bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg flex items-center">
+            🛠️ Admin
+          </Link>
         </div>
 
         {/* Hamburger Button */}
@@ -68,6 +71,9 @@ export default function Navbar() {
             </Link>
             <Link to="/orders" onClick={() => setMenuOpen(false)}>
               <i className="fas fa-shopping-cart text-grey-100 mr-2"></i> My Orders
+            </Link>
+            <Link to="/admin" onClick={() => setMenuOpen(false)} className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg font-semibold">
+              🛠️ Admin Panel
             </Link>
           </div>
         )
