@@ -335,6 +335,9 @@ export default function Home() {
           {/* Copyright */}
           <div className="text-center text-sm">
             <p>&copy; 2026 AutoStore. All rights reserved. | Buy with confidence.</p>
+            <Link to="/admin" className="text-gray-500 hover:text-gray-300 text-xs mt-4 inline-block transition">
+              Admin
+            </Link>
           </div>
         </div>
       </footer>
